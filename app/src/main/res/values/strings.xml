@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SwimTracker</string>
+    <string name="nav_team">Nhóm bơi</string>
+    <string name="nav_library">Thư viện</string>
+    <string name="nav_swim">Bài tập</string>
+    <string name="nav_note">Nhật ký</string>
+    <string name="nav_setting">Cài đặt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
