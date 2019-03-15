@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CoachViewInfo">
+
+    <LinearLayout
+        android:id="@+id/upper_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorBlue"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="99dp"
+            android:src="@drawable/test"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="295dp"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:gravity="center|left"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="Huấn Luyện Viên"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_gender"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:src="@drawable/icon_gender_male"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upper_part"
+        android:layout_marginTop="39dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="31dp"
+                    android:src="@drawable/icon_email"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="295dp"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:src="@drawable/icon_phone"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tv_pnumber"
+                android:layout_width="295dp"
+                android:layout_height="45dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="31dp"
+                    android:src="@drawable/icon_dob"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:id="@+id/tv_dob"
+                    android:layout_width="295dp"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="31dp"
+                    android:src="@drawable/icon_address"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="295dp"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_update"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Cập nhật"
+                android:textAllCaps="false"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/activity_main"></include>
+</RelativeLayout>
